@@ -40,6 +40,8 @@ const [modalCard, setModalCard] = useState(false)
        
         <div className="Body">
             <button onClick={loggout}>loggout</button>
+            <br></br>
+            <button onClick={getCards}>getall</button>
         <Note  setObjetos={setObjetos} getCards={getCards}/>
             <div className='organizacao'>
                         

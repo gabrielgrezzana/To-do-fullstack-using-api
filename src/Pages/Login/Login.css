@@ -56,4 +56,6 @@
     margin-top: 18px;
     border-radius: 8px;
     box-shadow: rgba(59, 15, 109, 0.178) 3px 26px 70px 4px;
+    cursor: pointer;
 }
+

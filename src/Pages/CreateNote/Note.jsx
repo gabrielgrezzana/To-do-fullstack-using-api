@@ -2,7 +2,7 @@ import '../CreateNote/Note.css'
 import Modal from 'react-modal'
 import { useState } from 'react'
 import axios from 'axios';
-//import axios from 'axios';
+
 
 export function Note({setObjetos, getCards}){
 const [openmodal, setOpenModal] = useState(false);
@@ -18,13 +18,13 @@ const [notes, setNotes] = useState({link:"aleatorio"})
       
        const response = await axios.post('https://repository-management.herokuapp.com/repo/create-repository', notes)
         const teste = response.data;
+        console.log(response)
        setObjetos(teste)
        getCards()
+       
     }
 
-    
-
-    
+ 
     return (
         <>
             <div className='organizacaoNote'>
